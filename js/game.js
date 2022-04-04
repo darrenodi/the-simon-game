@@ -1,4 +1,5 @@
 //game pattern
+var userClickedPattern = [];
 
 var gamePattern = [];
 
@@ -17,6 +18,12 @@ var randomChosenColour = buttonColors[nextSequence()];
 //add color to pattern
 gamePattern.push(randomChosenColour);
 
+//Jquery event listener and flash
 var s = $("div."+randomChosenColour);
 
 s.stop().fadeOut(200).fadeIn(200);
+
+$("div.btn").on( "click", this.id , function() {
+  var userChosenColour  = this.id;
+  userClickedPattern.push(userChosenColour);
+});
