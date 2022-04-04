@@ -17,4 +17,6 @@ var randomChosenColour = buttonColors[nextSequence()];
 //add color to pattern
 gamePattern.push(randomChosenColour);
 
+var s = $("div."+randomChosenColour);
 
+s.stop().fadeOut(200).fadeIn(200);
