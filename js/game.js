@@ -7,6 +7,7 @@ $(document).keypress(function(){
     $("#level-title2").html("Level " +level);
     nextSequence();
   }
+  
 });
 
 var level = 0;
