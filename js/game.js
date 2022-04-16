@@ -10,6 +10,7 @@ $(document).keypress(function(){
   
 });
 
+
 var level = 0;
 
 var userClickedPattern = [];
